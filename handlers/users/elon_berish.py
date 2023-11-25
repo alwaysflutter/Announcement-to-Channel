@@ -84,7 +84,7 @@ async def enter_message(message: Message, state: FSMContext):
     async with state.proxy() as date:
         text = date.get('text')
     if cancel(text):
-        Variable.global_ls.append(text)
+       
         await message.answer("Telefoningiz rangini tanlang",reply_markup=phonecolor)
         await AboutPhone.next()
     else:
