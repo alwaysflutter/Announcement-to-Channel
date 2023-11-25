@@ -12,7 +12,6 @@ class AboutPhone(StatesGroup):
     AboutPass = State()
     AboutAlmash = State()
     AboutBater = State()
-    Add = State()
     AboutConiform = State()
     Coniform = State()
     AboutCost = State()
